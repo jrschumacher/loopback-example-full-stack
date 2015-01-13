@@ -7,8 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "grunt test",
-    "build": "bower install; grunt build"
+    "build": "bower install; grunt build",
+    "test": "./node_modules/loopback-testing/node_modules/.bin/mocha common/models/test"
   },
   "repository": {
     "type": "git",
@@ -57,6 +57,7 @@
     "karma-jasmine": "^0.1.5",
     "karma-phantomjs-launcher": "^0.1.4",
     "load-grunt-tasks": "^0.6.0",
+    "loopback-testing": "^1.0.4",
     "time-grunt": "^0.4.0"
   },
   "dependencies": {
